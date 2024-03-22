@@ -1,0 +1,8 @@
+
+description: |
+  This binding provides a raw SPI interface to the Micron
+  MT29F NAND SPI flash family.
+
+compatible: "micron,mt29f"
+
+include: [spi-device.yaml]
