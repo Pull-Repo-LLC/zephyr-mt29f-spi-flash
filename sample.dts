@@ -1,0 +1,15 @@
+
+@spi2 {
+  compatible = "nordic,nrf-spim";
+  status = "okay";
+  pinctrl-0 = <&spi2_default>;
+  pinctrl-1 = <&spi2_sleep>;
+  pintctrl-names = "default", "sleep";
+  cs-gpios = <&gpio0 25 GPIO_ACTIVE_LOW | GPIO_PULL_UP>;
+
+  mt29f: mt29f@0 {
+    compatible = "micron,mt29f";
+    reg = <0>;
+    spi-max-frequency = <80000000>;
+  };
+};
