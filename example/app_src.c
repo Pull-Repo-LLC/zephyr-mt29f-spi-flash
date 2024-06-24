@@ -1,7 +1,9 @@
 
+#include <stdint.h>
+#include <stddef.h>
+
 #include <zephyr/types.h>
 
-#include "mt29f_defs.h"
 #include "mt29f_nand.h"
 
 static const mt29f_cfg_t cfg = {
